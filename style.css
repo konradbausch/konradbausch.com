@@ -7,7 +7,7 @@
 /*nav bar styling*/
 * {
   margin: 0px;
-
+  font-family: "Poppins", sans-serif;
   padding: 0px;
   box-sizing: border-box;
 }
@@ -56,6 +56,13 @@ nav {
 }
 
 /*main body styling*/
+
+h1{
+  text-transform: uppercase;
+}
+#out {
+  font-size: 10rem;
+}
 
 #main {
   margin-top: 3rem;

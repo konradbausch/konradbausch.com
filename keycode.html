@@ -14,6 +14,16 @@
     <title>Document</title>
   </head>
   <body>
+      <script>
+          
+          document.addEventListener("keydown",keyHandler)
+
+          function keyHandler(event){
+            
+            document.getElementById("out").innerHTML = "KEYCODE "+ event.keyCode;
+            console.log("test")
+          }
+      </script>
     <header>
       <nav>
         <ul class="nav-links">
@@ -35,17 +45,26 @@
             />
           </svg>
         </a>
-        <li><a href="keycode.html">keycode</a></li>
+          <li><a href="keycode.html">keycode</a></li>
           <li><a href="#">Nichts</a></li>
           <li><a href="#">Nichts</a></li>
           <li><a href="#">Nichts</a></li>
-          
         </ul>
       </nav>
     </header>
-
     <div id="main">
-      <h1 style="text-align: center; font-size: 10rem;">Konrads Website</h1>
+      
+          
+          <h1>Press key to get keycode</h1>
+          <h1>Press key to get keycode</h>
+          <h1>Press key to get keycode</h1>
+          <h1>Press key to get keycode</h1>
+          <h1>Press key to get keycode</h1>
+          <h1>Press key to get keycode</h1>
+
+          <h1 id = "out">KEYCODE</h1>
+       
     </div>
+    
   </body>
 </html>
