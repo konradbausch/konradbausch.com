@@ -26,7 +26,7 @@
 nav {
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: 120%;
   display: flex;
   justify-content: space-around;
   align-items: center;
