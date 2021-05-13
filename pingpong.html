@@ -14,6 +14,7 @@
     <title>Konrad Bausch</title>
   </head>
   <body>
+      
     <header>
       <nav>
         <ul class="nav-links">
@@ -45,16 +46,47 @@
     </header>
 
     <div id="main">
-      <h1 style="text-align: center; font-size:2vw">Konrads Website</h1>
+      <h1 style="text-align: center; font-size:2vw">Ping Pong</h1>
+      <canvas id="canvas"></canvas>
     </div>
   </body>
 </html>
-<script>
-  document.addEventListener("keypress",vir)
 
-  function vir (event){
-    if(event.keyCode == 32){
-      alert("Virus installiert")
+<script>
+    const can = document.getElementById("canvas");
+    const ctx = can.getContext("2d");
+    var speed = 1;
+    var ballX = 20;
+    var ballY = 20;
+    var ballDirX = 0;
+    var ballDirY = 0;
+    var width = can.width;
+    var height = can.height;
+    var ballSize = 10;
+
+  
+
+
+
+    
+    setInterval(game, 1000 / 30);
+  
+    function game(){
+        ballX = ballX + ballDirX * speed;
+        ballY = ballY + ballDirY * speed;
+
+        
+       draw();
     }
-  }
+
+    function draw(){
+        
+        ctx.fillRect(ballX,ballY,ballSize,ballSize);        
+    }
+    function clear(){
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0,0,width,height);
+        ctx.fillStyle = "#000000" 
+    }
+
 </script>
