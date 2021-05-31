@@ -1,33 +1,24 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
 
-    <title>KeyCode</title>
+    <title>Konrad Bausch</title>
   </head>
-  <body>
-      <script>
-          
-          document.addEventListener("keydown",keyHandler)
-
-          function keyHandler(event){
-            
-            document.getElementById("out").innerHTML = "KEYCODE "+ event.keyCode;
-            console.log("test")
-          }
-      </script>
     <header>
       <nav>
         <ul class="nav-links">
-          <a href="index.html">
+          <a href="../index.html">
           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
           <svg
@@ -45,19 +36,34 @@
             />
           </svg>
         </a>
-          <li><a href="keycode.html">keycode</a></li>
-          <li><a href="game/game.html">game</a></li>
+        <li><a href="../keycode.html">keycode</a></li>
+          <li><a href="game.html">game</a></li>
           <li><a href="#">Nichts</a></li>
           <li><a href="#">Nichts</a></li>
+          
         </ul>
       </nav>
     </header>
-    <div id="main">
-          <h1>Press key to get keycode</h1>
 
-          <h1 id = "out">KEYCODE</h1>
-       
-    </div>
+    <body id="main" >
+        
+
+        <h2 id="p1" style="display: inline;">Player1:    0 points</h2>
+        <h2 id="p2" style="display: inline;" >Player2:    0 points</h2> 
+        <canvas id="canvas" width="800" height="600" style="border: 1px solid black;"></canvas> 
     
-  </body>
+    
+       
+    
+    </body>
+    <script src="gameScript.js"></script>
 </html>
+<script>
+  document.addEventListener("keypress",vir)
+
+  function vir (event){
+    if(event.keyCode == 32){
+      alert("Virus installiert")
+    }
+  }
+</script>
