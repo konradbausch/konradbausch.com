@@ -81,7 +81,7 @@ function update() {
 function logic() {
     if (player1.colidesWith(ball) ){
         bounce.play();
-        ballDirection.x *= -1.03;
+        ballDirection.x *= -1.01;
         ballDirection.y += player1Direction * playerEffectOnDirection;
         ballDirection.y *= yReducton;
         if (serve) {
@@ -92,7 +92,7 @@ function logic() {
 
     if (player2.colidesWith(ball) ){
         bounce.play();
-        ballDirection.x *= -1.03;
+        ballDirection.x *= -1.01;
         ballDirection.y += player2Direction * playerEffectOnDirection;
         ballDirection.y *= yReducton;
         if (serve) {
