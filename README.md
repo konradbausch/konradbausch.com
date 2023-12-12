@@ -1,1 +1,1 @@
-# konradbausch.de
+# konradbausch.com
