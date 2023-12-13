@@ -8,11 +8,11 @@
 }
 
 h1{
-  font-size: max(7vw, 36pt);
+  font-size: 7vw;
 }
 
 p{
-  font-size: max(1.2vw, 12pt);
+  font-size: 2vw;
   color: grey;
 }
 
@@ -26,14 +26,13 @@ a:hover{
 
 a.game-link{
   display: block;
-  font-size: 5vw;
+  font-size: 4vw;
   text-decoration:underline;
   margin: 50px 0px 10px 0px;
-  font-size: max(2vw, 16pt);
 }
 
 a.mail{
-  font-size: max(2vw, 16pt);
+  font-size: 4vw;
   margin: 50px 0px 10px 0px;
   display: block;
   text-decoration:underline;
