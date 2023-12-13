@@ -1,70 +1,40 @@
-:root {
-  --nav-color: rgb(54, 54, 54);
-  --nav-text-color: rgb(196, 196, 196);	
-  --nav-text-hover-color: white;
-}
-
-/*nav bar styling*/
-* {
-  margin: 0px;
-  font-family: 'Roboto', sans-serif;
-  padding: 0px;
-
-}
-
-#logo {
-  fill: var(--nav-text-color);
-  width: 21px;
-  height: 21px;
-  margin: -1px;
-}
-
-#logo:hover {
-  fill: var(--nav-text-hover-color);
-}
-
-nav {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 3rem;
-  background-color: var(--nav-color);
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.nav-links > li > a {
-  color: var(--nav-text-color);
+*{
+  padding: 0;
+  margin: 0;
+  font-family:monospace;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-weight: normal;
+  color: rgb(46, 46, 46);
 }
-
-.nav-links > li > a:hover {
-  color: var(--nav-text-hover-color);
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-}
-
-/*main body styling*/
 
 h1{
-  text-transform: uppercase;
-  font-size: 5vw;
-}
-#out {
-  font-size: 7vw;
+  font-size: max(7vw, 36pt);
 }
 
-#main {
-  margin-top: 3rem;
+p{
+  font-size: max(1.2vw, 12pt);
+  color: grey;
+}
+
+body{
+  padding: 8vw 10vw 10vw 10vw;
+}
+
+a:hover{
+  color: gray;
+}
+
+a.game-link{
+  display: block;
+  font-size: 5vw;
+  text-decoration:underline;
+  margin: 50px 0px 10px 0px;
+  font-size: max(2vw, 16pt);
+}
+
+a.mail{
+  font-size: max(2vw, 16pt);
+  margin: 50px 0px 10px 0px;
+  display: block;
+  text-decoration:underline;
 }
