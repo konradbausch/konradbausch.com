@@ -107,6 +107,7 @@ function displayTeams() {
     </div>
 
     <button onclick="addStudent()">Add Student</button>
+    <p> This will delete all points!</p>
     <br />
     <br />
     <br />
