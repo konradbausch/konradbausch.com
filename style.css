@@ -24,16 +24,9 @@ a:hover{
   color: gray;
 }
 
-a.game-link{
+a.menu-item{
   display: block;
   font-size: 4vw;
   text-decoration:underline;
   margin: 5vw 0px 1vw 0px;
-}
-
-a.mail{
-  font-size: 4vw;
-  margin: 5vw 0px 1vw 0px;
-  display: block;
-  text-decoration:underline;
 }

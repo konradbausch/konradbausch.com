@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>URM Formatter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/formater.js"></script>
+    <link rel="stylesheet" href="formater.css" />
+  </head>
+  <body>
+    <h1>URM Formatter</h1>
+    <p>
+      This tool simplifies the creation of URM Files for groups.
+      <br />
+      <br />
+      If you possess a configuration file, simply upload it.
+      <br /><br />Otherwise, select "New Config," specify the number of teams,
+      add students to these teams, and remember to download your configuration
+      for future use. Next, allocate points to each team, input the assignment
+      number, and set the maximum points.
+      <br />
+      <br />
+      Once completed, download the generated URM File.
+    </p>
+
+    <h2>Upload existing config</h2>
+    <input type="file" id="config-input" oninput="loadConfig()" />
+
+    <h2>Config Editor</h2>
+    <div class="input-wraper">
+      <div class="lable">Number of Teams:</div>
+      <input id="number-of-teams" type="number" min="1" max="20" />
+    </div>
+    <button onclick="createTeams()">New Config</button>
+    <p>This will delete all prior Inputs</p>
+    <br />
+    <br />
+
+    <h2>Groups</h2>
+    <div id="teams">No groups yet</div>
+    <div class="input-wraper">
+      <div class="lable">Assignment Nr.</div>
+      <input id="assignment-number" type="number" min="1" max="20" />
+    </div>
+
+    <div class="input-wraper">
+      <div class="lable">Maximum Points</div>
+      <input id="max-points" type="number" min="1" max="100" />
+    </div>
+    <button onclick="downloadURMFile()">Download URM File</button>
+  </body>
+</html>
