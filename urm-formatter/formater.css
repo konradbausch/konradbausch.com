@@ -7,6 +7,18 @@
   color: rgb(46, 46, 46);
 }
 
+.home{
+    display: block;
+    font-size: xxx-large;
+    width: 100px;
+    text-decoration: underline;
+}
+
+.home:hover{
+    
+    color: grey;
+}
+
 p {
   max-width: 700px;
 }
