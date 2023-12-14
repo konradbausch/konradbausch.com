@@ -45,9 +45,14 @@ function studentToHtml(student) {
 //creates as many teams as specified in input with id number-of-teams when button is pressed
 function createTeams() {
     let numberOfTeams = document.getElementById("number-of-teams").value;
-    teams = [];
-    for (let i = 0; i < numberOfTeams; i++) {
-        teams.push(new Team(i+1, []));
+    //add or delete teams
+    if (teams.length < numberOfTeams) {
+        for (let i = teams.length; i < numberOfTeams; i++) {
+            teams.push(new Team(i+1, []));
+        }
+    }
+    else if (teams.length > numberOfTeams) {
+        teams.splice(numberOfTeams, teams.length - numberOfTeams);
     }
 
     displayTeams();
