@@ -144,6 +144,9 @@ function downloadConfig() {
     a.click();
   }
 
+//delete all teams
+
+
 //loads the config from a file in config-input
 function loadConfig() {
     let file = document.getElementById("config-input").files[0];
