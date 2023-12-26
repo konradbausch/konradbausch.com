@@ -1,97 +1,92 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: monospace;
+  font-family: Helvetica, Arial, sans-serif;
   text-decoration: none;
-  font-weight: normal;
-  color: rgb(46, 46, 46);
+  font-weight: 200;
+  font-size: 1em;
+  color: rgb(95, 99, 104);
 }
 
-.home{
-    display: block;
-    font-size: xxx-large;
-    width: 100px;
-    text-decoration: underline;
-}
-
-.home:hover{
-    
-    color: grey;
-}
-
-p {
-  max-width: 700px;
-}
-
-h1 {
-  font-size: 1.75em;
+html{
+  font-size: min(16pt, max(12pt, 2vw));
 }
 
 body {
-  padding: 3vw 2vw 3vw 3vw;
+  padding: min(3em, max(2em, 7vw));
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color:rgb(0, 0, 0);
+}
+
+h1,h2 {
+  font-size: 1.75em;
+  margin-top: 1em;
+}
+
+td {
+  padding: 0em 0.5em;
+}
+
+button, input {
+  border-radius: 0.25em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+input {
+  border: 1px solid rgb(95, 99, 104);
+  min-width: 4em;
+}
+
+button {
+  background-color: rgb(65, 105, 225);
+  color: white;
+  border: none;
+  margin: 0.5em 0em;
+}
+
+button:hover {
+  background-color: rgb(97, 136, 250);
+}
+
+::placeholder {
+  color: rgb(141, 148, 156);
+}
+
+p {
+  max-width: 900px;
+}
 
 div.input-wraper {
     display: inline-block;
     position: relative;
-    margin-top: 20px;
+    margin-top: 1em;
+}
+
+.delete {
+  padding: 0em;
+  color: red;
+  background-color: white;
+}
+
+.delete:hover {
+  background-color: white;
 }
 
 div.lable {
-    font-size: 3;
     position: absolute;
-    top: -15px;
-    font-size: x-small;
+    top: -1.5em;
+    font-size: 0.5em;
 }
 
-button.delete{
-    padding: 0.5vh;
-    color: red;
-    background-color: white;
-    font-size: x-small;
-}
-button.delete:hover{
-    text-decoration: underline;
-    background-color: white;
+a.home {
+  font-size: 3em;
+  display: block;
+  text-decoration:underline;
+  color: black;
 }
 
-.input-wraper  input {
-  border: 1px solid rgb(46, 46, 46);
-  border-radius: 3px;
-  padding: 1vw 1vw 1vw 1vw;
-  width: 80px;
-}
-
-button {
-  border: none;
-  background-color: rgb(46, 46, 46);
-  color: white;
-  padding: 1vw 2vw 1vw 2vw;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: grey;
-}
-
-h1,
-h2 {
-  margin: 2vw 0px 2vh 0px;
-}
-
-h4 {
-  display: inline-block;
-  margin: 1vw 0vh;
-}
-ul {
-  list-style-type: none;
-  display: inline;
-}
-
-li {
-  margin-left: 1vh;  
-  display: inline-block;
-  font-size: x-small;
+a.home:hover {
+  color: gray;
 }

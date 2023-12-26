@@ -17,14 +17,15 @@ function teamToHtml(team) {
         <div class="lable">Points</div>
         <input id="points-team-${team.number}" placeholder="1:1:1:1" type="text"/>
     </div>
+    <br />
     `;
 
-    html += `<ul>`;
+    html += `<table>`;
     for (let student of team.students) {
         console.log(student);
         html += studentToHtml(student);
     }
-    html += `</ul><br />`;
+    html += `</table>`;
     return html;
 }
 
@@ -34,12 +35,16 @@ class Student {
         this.mat = mat;
         this.name = name;
     }
-
 }
 
 //make a student to a html element
 function studentToHtml(student) {
-    return `<li> ${student.mat} (${student.name}) <button class="delete" onclick="deleteStudent('${student.mat}')">X</button></li>`;
+    return `
+    <tr>
+        <td>${student.mat}</td>
+        <td>(${student.name})</td>
+        <td><button class="delete" onclick="deleteStudent('${student.mat}')">ⓧ</button></td>
+    </tr>`;
 }
 
 //creates as many teams as specified in input with id number-of-teams when button is pressed
@@ -107,9 +112,6 @@ function displayTeams() {
     </div>
 
     <button onclick="addStudent()">Add Student</button>
-    <p> This will delete all points!</p>
-    <br />
-    <br />
     <br />
     <button onclick="downloadConfig()">Download Config</button>
 
@@ -143,9 +145,6 @@ function downloadConfig() {
     a.download = "config.json";
     a.click();
   }
-
-//delete all teams
-
 
 //loads the config from a file in config-input
 function loadConfig() {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="formater.css" />
   </head>
   <body>
-    <a href="../index.html" class="home">HOME</a>
+    <a href="../index.html" class="home"> HOME </a>
     <h1>URM Formatter</h1>
     <p>
       URM is a tool used by the University of Tübingen to grade assignments.
@@ -32,15 +32,12 @@
     <h2>Upload existing config</h2>
     <input type="file" id="config-input" oninput="loadConfig()" />
 
-    <h2>Config Editor</h2>
+    <h2>Editor</h2>
     <div class="input-wraper">
       <div class="lable">Number:</div>
       <input id="number-of-teams" type="number" min="1" max="20" />
     </div>
     <button onclick="createTeams()">Change Number of Teams</button>
-    <p>This will delete all points!</p>
-    <br />
-    <br />
 
     <h2>Groups</h2>
     <div id="teams">No groups yet</div>

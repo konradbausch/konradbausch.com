@@ -1,32 +1,54 @@
 *{
   padding: 0;
   margin: 0;
-  font-family:monospace;
+  font-family: Helvetica, Arial, sans-serif;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 200;
   color: rgb(46, 46, 46);
 }
 
+html{
+  font-size: min(32px, max(16px, 4vw));
+}
+  
+main{
+  padding: min(100px, max(30px, 7vw));
+}
+
 h1{
-  font-size: 7vw;
+  font-size: 1.75em;
 }
 
 p{
-  font-size: 2vw;
   color: grey;
+  font-size: 0.9em;
 }
 
-body{
-  padding: 8vw 10vw 10vw 10vw;
+a{
+  text-decoration: underline;
 }
 
-a.menu-item:hover{
+a:hover{
   color: gray;
 }
 
+footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 3em;
+}
+
+footer a{
+  margin: 0 0.5em;
+}
+
 a.menu-item{
+  margin-top: min(100px, max(30px, 7vw));
+  font-size: 1.2em;
   display: block;
-  font-size: 4vw;
-  text-decoration:underline;
-  margin: 5vw 0px 1vw 0px;
+  
 }
